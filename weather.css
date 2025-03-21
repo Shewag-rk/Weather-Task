@@ -1,0 +1,57 @@
+body {
+    background-color: #00BFFF; /* Bright blue background */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.search {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #00BFFF; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #008CBA; /* Darker button color on hover */
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+.temperature {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.description, .date {
+    font-size: 14px;
+    color: #555;
+}
