@@ -20,7 +20,12 @@ document.addEventListener("DOMContentLoaded", () =>{
             city.innerHTML = data.name;
             temp.innerHTML = Math.floor(data.main.temp-273.15);
             desc.innerHTML = data.weather[0].description;
-            date.innerHTML = new Date()
+            const local = new Date(data.dt * 1000)
+            const localOff = new Date(local.getTime()+data.timezone * 1000)
+            const ofset = data.timezone/3600
+            console.log("date = ", localOff.toString());
+            console.log("ofset = ", ofset);
+
         })
     }
 })
